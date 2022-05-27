@@ -7,7 +7,7 @@
 #   Character.create(name: "Luke", movie: movies.first)
 
 require 'csv'
-csv = CSV.read("C:\\Users\\Me\\Desktop\\pokemon.csv", headers: true).map do |row|
+csv = CSV.read("pokemon.csv", headers: true).map do |row|
   row = row.to_h.transform_keys({ "#" => "number",
                             "Name" => "name",
                             "Type 1" => "type_1",
